@@ -5,7 +5,7 @@ describe('Ping test', () => {
   let url;
   
   beforeAll(async () => {
-    server = await require('./index');
+    server = await require('../src/index');
     url = `http://localhost:${server.address().port}`;
   });
   
